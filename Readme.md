@@ -1,53 +1,30 @@
-# Expo Chat example app
+# ChatGPT Mobile
 
-## How to run the app
+ChatGPT 🤖 mobile application bulit using React Native, Expo &amp; Webview
 
+Download Android APK file on
+[GitHub Releases](https://github.com/nezort11/chatgpt-mobile/releases/).
 
-- Install the expo command line tool and other requirements as specified in the [expo official installation documentation](https://docs.expo.dev/get-started/installation/)
+**Features**:
 
-- Clone the project
+- improved mobile UI/UX
+- native drawer swipe
+- transparent status bar
+- themed bottom bar
+- automatic light/dark theme (based on system)
+- android back button (close drawer / quit app)
+- startup keyboard automatic open
+- chat keyboard automatic dismiss
+- splash screen display
+- page reload button
+- "chatgpt is at capacity" workaround
 
-```bash
-   git clone https://github.com/GetStream/stream-chat-react-native.git
-```
+<div align="center">
 
-- Install dependencies
+  <img src="https://user-images.githubusercontent.com/59317431/209671813-fe5074a4-f0a1-4c89-9946-a97961a60b59.jpg" width="250px" />
 
-```bash
-   cd stream-chat-react-native/package
-   make expo-example-deps
-```
-- Move to the app directory
+  <img src="https://user-images.githubusercontent.com/59317431/209671823-04182d33-ab5e-4bc2-8301-a34253721eb8.jpg" width="250px" />
 
-```bash
-   cd ../examples/ExpoMessaging 
-```
+  <img src="https://user-images.githubusercontent.com/59317431/209671830-962b1ffc-e717-4523-8905-b262788fd33c.jpg" width="250px" />
 
-- Run
-
-   - For iOS
-
-     ```bash
-     yarn ios
-     ```
-
-   - For android
-
-     ```bash
-     yarn android
-     ```
-
-**Note:**
-
-If your Android build fails please add the following snippet on the `android/gradle.properties` to make it work.
-
-```
-# Disabled hermes in favour of broken Android build due to the package `react-native-quick-sqlite`:
-# To Fix:
-# A problem occurred evaluating project ':react-native-quick-sqlite'.
-# > Cannot get property 'hermesEnabled' on extra properties extension as it does not exist
-hermesEnabled=true
-# disables the check for multiple instances for gesture handler
-# this is needed for react-native-gesture-handler to be both a devDep of core and be a dep on the expo sample app
-disableMultipleInstancesCheck=true
-```
+</div>

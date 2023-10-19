@@ -1,39 +1,32 @@
 {
   "expo": {
-    "name": "ExpoMessaging",
-    "slug": "ExpoMessaging",
-    "privacy": "public",
-    "version": "1.0.0",
+    "name": "ChatGPT",
+    "slug": "chatgpt-mobile",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
+      "backgroundColor": "#FFFFFF",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "dark": {
+        "image": "./assets/splash_dark.png",
+        "backgroundColor": "#343541",
+        "resizeMode": "contain"
+      }
     },
+    "userInterfaceStyle": "automatic",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "usesIcloudStorage": true,
-      "bundleIdentifier": "io.stream.expomessaging"
+      "supportsTablet": true
     },
-    "android": {
-      "package": "io.stream.expomessaging",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "extra": {
+      "eas": {
+        "projectId": ""
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
-    },
-    "experiments": {
-      "turboModules": true
-    },
-    "scheme": "ExpoMessaging"
+    }
   }
 }
