@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { SafeAreaView, View } from "react-native";
 import { Channel, Thread } from "stream-chat-expo";
 import { Stack } from "expo-router";
-import { AppContext } from "AppContext";
+import { AppContext } from "../../../../../context/AppContext";
 
 export default function ThreadScreen() {
     const { channel, thread, setThread } = useContext(AppContext);
